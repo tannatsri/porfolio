@@ -1,0 +1,19 @@
+{% macro chapter(prev=false, next=false) %}
+{% if prev or next %}
+<div class="chapter">
+    {% if prev %}
+    {% set page = get_page(path=prev) %}
+    <a href="{{page.permalink}}">← {{page.title}}</a>
+    {% else %}
+    {# always push `next` over #}
+    <div></div>
+    {% endif %}
+
+    {% if next %}
+    {% set page = get_page(path=next) %}
+    <a href="{{page.permalink}}">{{page.title}} →</a>
+    {% endif %}
+</div>
+{% endif %}
+{% endmacro chapter %}
+
