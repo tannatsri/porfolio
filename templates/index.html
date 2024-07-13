@@ -86,7 +86,7 @@
                     <p>
                         {{ page.content | safe | striptags | truncate }}
                     </p>
-   
+                
                 </div>
                 <hr />
                 {% endif %}
@@ -95,14 +95,14 @@
         </div>
         {% endblock content %}
 
-        <!-- <footer>
+        <footer>
             {% block footer %}
             <p>
                 Feather theme by <a href="https://doomy.org">doomy</a>&nbsp;&nbsp;-&nbsp;&nbsp; Built with <a
                     href="https://getzola.org">Zola</a>
             </p>
             {% endblock footer %}
-        </footer> -->
+        </footer>
 
         {% if not config.extra.feather_theme %}
         <script>
