@@ -1,0 +1,27 @@
+# This is an example file to help you get started.
+# This also lets you run `zola serve` just in the themes directory
+# for easier development.
+theme = "feather"
+# The URL the site will be built for
+base_url = "https://tannatsri.com/"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+title = "tannatsri"
+
+[markdown]
+highlight_code = true
+highlight_theme = "css"
+highlight_themes_css = [
+    { theme = "ayu-dark", filename = "syntax-theme-dark.css" },
+    { theme = "ayu-light", filename = "syntax-theme-light.css" },
+]
+
+theme = "feather"
+
+[extra]
+
+feather_head = ""
+title = "tannatsri"
+feather_hide_nav_image = false
+feather_disqus_domain = "tannatsri.com"
