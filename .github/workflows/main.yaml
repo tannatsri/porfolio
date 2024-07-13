@@ -6,9 +6,6 @@ on:
    - main
 
 jobs:
-  job-name:
-    permissions:
-      contents: write
   build:
     name: Publish site
     runs-on: ubuntu-latest
